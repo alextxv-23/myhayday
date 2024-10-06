@@ -31,22 +31,33 @@ public class MyHayDay {
         System.out.println("Trigo paramétrico:\n------------------\nIcono: " + trigoParametrico.getIcono()
         + "\nDuración producción: " + trigoParametrico.getDuracionProduccion()
         + "\nExperiencia de recolección: " + trigoParametrico.getExperienciaRecolecta()
-        + "\nPrecio de venta: " + trigoParametrico.getExperienciaRecolecta()
+        + "\nPrecio de venta: " + trigoParametrico.getPrecioVenta()
         + "\nRiego: " + trigoParametrico.getRiego());
         
         // Test getters de trigo por defecto
         System.out.println("\nTrigo por defecto:\n------------------\nIcono: " + trigoDefecto.getIcono()
         + "\nDuración producción: " + trigoDefecto.getDuracionProduccion()
         + "\nExperiencia de recolección: " + trigoDefecto.getExperienciaRecolecta()
-        + "\nPrecio de venta: " + trigoDefecto.getExperienciaRecolecta()
+        + "\nPrecio de venta: " + trigoDefecto.getPrecioVenta()
         + "\nRiego: " + trigoDefecto.getRiego());
         
         // Test getters de trigoCopia
         System.out.println("\nTrigo copia :\n-------------\nIcono: " + trigoCopia.getIcono()
         + "\nDuración producción: " + trigoCopia.getDuracionProduccion()
         + "\nExperiencia de recolección: " + trigoCopia.getExperienciaRecolecta()
-        + "\nPrecio de venta: " + trigoCopia.getExperienciaRecolecta()
+        + "\nPrecio de venta: " + trigoCopia.getPrecioVenta()
         + "\nRiego: " + trigoCopia.getRiego());
+        
+        // Modificación de trigoDefecto
+        trigoDefecto.setIcono("No quiero que tenga icono");
+        trigoDefecto.setPrecioVenta(25);
+        
+        // Test getters de trigo por defecto (Modificación de algunos valores)
+        System.out.println("\nTrigo por defecto modificado:\n-----------------------------\nIcono: " + trigoDefecto.getIcono()
+        + "\nDuración producción: " + trigoDefecto.getDuracionProduccion()
+        + "\nExperiencia de recolección: " + trigoDefecto.getExperienciaRecolecta()
+        + "\nPrecio de venta: " + trigoDefecto.getPrecioVenta()
+        + "\nRiego: " + trigoDefecto.getRiego());
         
     }
     
